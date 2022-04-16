@@ -30,15 +30,15 @@ header {
 
 .header-left img {
     position: relative;
-    width: 10px;
-    height: 10px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background: linear-gradient(rgb(255, 179, 179), rgb(247, 133, 133));
 }
 
 .header-left h1 {
     margin: 0;
-    color: rgb(248, 230, 182);
+    color: rgb(0, 0, 0);
     letter-spacing: 4px;
     font-weight: 100;
     font-size: 20px;
