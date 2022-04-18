@@ -1,21 +1,52 @@
-.Pages-Button {
+.About-Button {
   position: relative;
   display: inline-block;
-  height: 680px;
-  width: 700px;
+  height: 335px;
+  width: 99%;
   background-color: #7aa8b7;
+  background-image: url('images/IMG_4424.jpg');
+  background-size: 1450px 450px;
+  background-repeat: no-repeat;
+  opacity: 0.7;
   border-radius: 5px;
   outline: none;
-  margin: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+.About-Button:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+.Projects-Button {
+  position: relative;
+  display: inline-block;
+  height: 335px;
+  width: 99%;
+  background-color: #7aa8b7;
+  background-image: url('images/Screen\ Shot\ 2022-04-17\ at\ 11.10.32\ PM.png');
+  background-size: 1450px 500px;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.Projects-Button:hover {
+  transform: scale(1.02);
+  opacity: 1;
 }
 
 .Buttons-Text {
   position: relative;
   top: 50%;
   text-align: center;
-  font-size: 20px;
+  font-size: 50px;
   letter-spacing: 4px;
-  font-weight: 100px;
+  font-weight: 300px;
   text-decoration: none;
-  color: #167D7F
+  color: #DDFFE7;
 }
