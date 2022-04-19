@@ -1,6 +1,6 @@
 header {
     position: right;
-
+    text-align: center;
     width: 100%;
     height: 100px;
 
@@ -9,6 +9,7 @@ header {
 
 .header-content {
     position: relative;
+    align-items: center;
     width: 100%;
     height: 100%;
 
