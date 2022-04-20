@@ -1,11 +1,11 @@
 .image1 {
     position: relative;
     align-items: center;
-    width: 550px;
-    height: 400px;
     display: block;
-    margin-left: auto;
+    width: 500px;
+    height: 500px;
     margin-right: auto;
+    margin-left: auto;
     margin-top: 5px;
 }
 
@@ -33,19 +33,6 @@
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-}
-
-.Program-Lang-List {
-    margin-left: 45%;
-}
-
-.Skills-List
-{
-    margin-left: 25%;
-}
-
-.Club-Info {
-    margin-left: 10%;
 }
 
 .hr1 {

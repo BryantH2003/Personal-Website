@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PacMan Project</title>
+  <link rel="stylesheet" tpye="text/css" href="theme.css"/>
+  <link rel="stylesheet" tpye="text/css" href="PacMan-Header.css"/>
+  <link rel="stylesheet" tpye="text/css" href="PacMan-Content.css"/>
+</head>
+<body>
+  <header>
+    <div class = "header-content">
+      <div class =  "header-middle">
+        <p>Python PacMan Project</p>
+      </div>
+    </div>
+  </header>
+      <img class = "image1" src = "images/Screen Shot 2022-04-18 at 11.50.48 PM.png">
+    </p>
+<h2 class = "Headers">Aim of the Project</h2>
+<p class = "Info">The goal was to not only create a replica of the famous Pac-Man game using my knowledge and help from 
+    this YouTube tutorial series by <a href = "https://www.youtube.com/watch?v=ZdwRcte00oU&t=713s">A Plus Coding</a> but 
+    try to also add unique aspects to the game itself.
+</p>
+<hr class = "hr1">
+<h2 class = "Headers">Deeper Dive</h2>
+<p class = "Info">This project implimented the Pygame library and required multiple different files and classes to interwine. The project 
+    was broken up into 3 classes. The App, Player, and Enemy classes. The program read from a text file called walls.txt and settings.py 
+    in order to properly set varibles like generating the walls of the classic Pac-Man map and setting the speeds and colors of the character 
+    models.
+</p>
+<h3 class = "Smaller-Headers">App Class</h3>
+<p class = "Info">The App class is resposnsible for managing the different game states such as start and playing states. In the start state the 
+    class uses the user defined start_draw() function to create the main menu page. This page prompts the player the Press Any Key To Start while idling
+     in the start phase. Once any button is pushed the class is then updated to the playing state which calls a new set of functions to draw the Pac-Man map 
+     and to constantly update the player's position. Within the App class both the little coins/tokens Pac-Man eats and the enemies objects are created using 
+     empty lists and appending items to that list. For the tokens/coins, a function reads from the walls.txt file containings C for coin, 1 for a wall, and other 
+     numbers greater than 1 for mark the positions of instantiation for the enemies. Everytime the file reads a C, a certain x and y coordinate is appended to the 
+     list to create the loctions of coins/tokens, similarly to the walls.    
+</p>
+<h3 class = "Smaller-Headers">Enemies Class</h3>
+<p class = "Info">The Enemies Class is resposnsible for instantiating the ghosts or enemies in the Pac-Man game. This class sets the personalities of the differnet 
+    ghosts to random, slow, scared, or speedy to coincide with the personalities of the ghosts in the actual game. The random ghost moves in random direction by generating 
+    a random number and using if statements as test cases for the four different possible directions of movement. The slow ghost has its speed set slower than the others. 
+    The speedy ghost has its speed amped faster than the other ghosts and the scared ghost moves away from the player's character model.  
+</p>
+<h3 class = "Smaller-Headers">Player Class</h3>
+<p class = "Info">The Player class creates the player character model and constantly updates the player's position. Here the score is also kept track by determining the player's 
+    position and comparing it to the positions of the tokens/coins and then removing the tokens/coins from the background if the player has moved over it. The main functionality 
+    of the player class are the functions that keep track of the player's position play area and determining how it will move next. Basically the play area is divided into even 
+    grid boxes. Then based on those grid boxes the player's position is then shifted based on the width and height of the grid boxes.
+</p> 
+<hr class = "hr1">
+<h3 class = "Headers">Running Into Problems</h3>
+<p class = "Info">Problems that I ran into during the process of creating the Pac-Man replica was that since the videos were a bit outdated, the pygame library had been updated meaning 
+    the way the video had used some of the functions did not coincide with the proper way to use it at the time I was coding. 
+</p>
+<h3 class = "Headers">Tackling The Problems</h3>
+<p class = "Info">I had to use the <a href = "https://www.pygame.org/docs/">Pygame Library Website</a> to learn some of the functions I was useing in order to properly impliment them. I 
+    often had to play around with the functions before I could add them into my project.
+</p>
+<hr class = "hr1">
+</body>
+</html>

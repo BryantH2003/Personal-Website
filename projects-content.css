@@ -28,6 +28,7 @@
     height: 135px;
     width: 99%;
     background-color: #7aa8b7;
+    background-image: url("images/Screen\ Shot\ 2022-04-19\ at\ 7.20.34\ PM.png");
     background-size: 1450px 450px;
     background-repeat: no-repeat;
     opacity: 0.7;
@@ -35,6 +36,11 @@
     outline: none;
     margin: 5px;
     text-align: center;
+  }
+
+  .Doodle-Jump-Button:hover {
+    transform: scale(1.02);
+    opacity: 1;
   }
 
 .Robotic-Arm-Button {
