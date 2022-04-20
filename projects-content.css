@@ -58,6 +58,11 @@
     text-align: center;
 }
 
+.Robotic-Arm-Button:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
 .Media-Team-Website-Button {
     position: relative;
     display: inline-block;
@@ -73,6 +78,11 @@
     text-align: center;
 }
 
+.Media-Team-Website-Button:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
 .PC-Keyboard-Button {
     position: relative;
     display: inline-block;
@@ -86,6 +96,11 @@
     outline: none;
     margin: 5px;
     text-align: center;
+}
+
+.PC-Keyboard-Button:hover {
+  transform: scale(1.02);
+  opacity: 1;
 }
 
 .Buttons-Text {
