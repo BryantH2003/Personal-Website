@@ -1,0 +1,120 @@
+header {
+    position: right;
+
+    width: 100%;
+    height: 100px;
+
+    background-color: rgb(247, 255, 179);
+}
+
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background-color: #98D7C2;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    
+}
+
+.header-left, .header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rems;
+}
+
+.header-left img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(255, 179, 179), rgb(247, 133, 133));
+}
+
+.header-left h1 {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    font-weight: 100px;
+    font-size: 30px;
+    padding-left: 1rem;
+}
+
+.header-middle {
+    position: relative;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 100px;
+    text-decoration: none;
+    padding-right: 5rem;
+    white-space: nowrap;
+}
+
+.header-right {
+  position: relative;
+  width:  100px;
+  height: 100px;
+  border-radius: 25%;
+  padding-left: 10rem;
+}
+
+.mobile-header {
+    display: none;
+}
+
+@media only screen and (max-width: 550px) {
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+    }
+}
+
+.header-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: pink;
+}
+
+.header-icon .header-menu-icon {
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    top: 10.5px;
+    border-radius: 1.5px;
+    background-color: #777;
+}
+
+.header-icon .header-menu-icon:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 3px;
+
+    bottom: 8px;
+    border-radius: 1.5px;
+
+    background-color: #777;
+}
+
+.header-icon .header-menu-icon:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 3px;
+
+    top: 8px;
+    border-radius: 1.5px;
+
+    background-color: #777;
+}
